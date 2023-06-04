@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #F7F1E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 40%;
+    box-sizing: border-box;
+}
+.clockshape{
+    width: 100%;
+    padding-bottom: 100%;
+    border: 3px solid #393646;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.digit{
+    font-size: 2em; 
+}
+.rotat104{
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+.rotat104 .digit{
+    transform: rotate(-30deg);
+}
+.rotat93115{
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+.rotat93115 .digit{
+    transform: rotate(-60deg);
+}
+.rotat126{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.rotat126 .digit{
+    transform: rotate(-90deg);
+}
+.rotat17{
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+.rotat17 .digit{
+    transform: rotate(-120deg);
+}
+.rotat28{
+    transform: translate(-50%, -50%) rotate(150deg);
+}
+.rotat28 .digit{
+    transform: rotate(-150deg);
+}
+
+.min{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(180deg);
+    width: 2.5px;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    animation: animate 60s linear infinite;
+    transform-origin: top;
+}
+@keyframes animate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.mintop{
+    width: 100%;
+    height: 50%;
+    background-color: #898121;
+}
+.mincenter{
+    width: 100%;
+    height: 40%;
+}
+.minbottom{
+    width: 100%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: #898121;
+    box-shadow: 1px 1px 5px 5px  #898121;
+}
+.sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(90deg);
+    width: 2px;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    animation: animate 10s linear infinite;
+    transform-origin: top;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.sectop{
+    width: 100%;
+    height: 60%;
+    background-color: #E7B10A;
+}
+.seccenter{
+    width: 100%;
+    height: 30%;
+}
+.secbottom{
+    width: 100%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: #E7B10A;
+    box-shadow: 1px 1px 5px 5px  #E7B10A;
+}
+.hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(180deg);
+    width: 3px;
+    height: 14%;
+    display: flex;
+    flex-direction: column;
+    animation: animate 300s linear infinite;
+    transform-origin: top;
+}
+.hourtop{
+    width: 100%;
+    height: 30%;
+    background-color: #4C4B16;
+}
+.hourcenter{
+    width: 100%;
+    height: 60%;
+}
+.hourbottom{
+    width: 100%;
+    height: 3%;
+    border-radius: 50%;
+    background-color: #4C4B16;
+    box-shadow: 1px 1px 5px 5px  #4C4B16;
+}
